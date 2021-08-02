@@ -8,7 +8,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class CoucouComponent implements OnInit, OnDestroy {
 
   constructor() {
-    console.warn('Je me consutruit');
+    console.warn('Je me consutruis');
 
   }
   ngOnDestroy(): void {
