@@ -4,8 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  { path: "home", component: HomeComponent },
-  { path: 'coucou', component: CoucouComponent }
+  {
+    path: "home", component: HomeComponent, children: [
+      { path: 'coucou', component: CoucouComponent }
+    ]
+  }
 ];
 
 @NgModule({
