@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  public title: string;
 
-  constructor() { }
+  constructor() {
+    this.title = "Bienvenu dans la démo"
+  }
 
   ngOnInit(): void {
+    setTimeout(() => this.title = "Que fais-tu encore là", 3000);
   }
 
 }
