@@ -11,6 +11,7 @@ import { BindingEventComponent } from './components/binding-event/binding-event.
 import { BindingAttributeComponent } from './components/binding-attribute/binding-attribute.component';
 import { PipesDateComponent } from './components/pipes-date/pipes-date.component';
 import { FrenchMonthPipe } from './pipes/french-month.pipe';
+import { PipesJsonComponent } from './components/pipes-json/pipes-json.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FrenchMonthPipe } from './pipes/french-month.pipe';
     BindingEventComponent,
     BindingAttributeComponent,
     PipesDateComponent,
-    FrenchMonthPipe
+    FrenchMonthPipe,
+    PipesJsonComponent
   ],
   imports: [
     BrowserModule,
