@@ -8,13 +8,15 @@ import { HomeComponent } from './components/home/home.component';
 import { BindingTwoWayComponent } from './components/binding-two-way/binding-two-way.component';
 import { FormsModule } from '@angular/forms';
 import { BindingEventComponent } from './components/binding-event/binding-event.component';
+import { BindingAttributeComponent } from './components/binding-attribute/binding-attribute.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BindingTwoWayComponent,
-    BindingEventComponent
+    BindingEventComponent,
+    BindingAttributeComponent
   ],
   imports: [
     BrowserModule,
