@@ -1,1 +1,2 @@
-<p>Aujourd'hui nous somme le {{now |date:'dd'}} {{now | date: "m" | frenchMonth}}. </p>
+<p>Aujourd'hui nous sommes le {{ now |date:'dd'}}
+  {{ now | date:'M':'+0200' | frenchMonth | lowercase}}.</p>

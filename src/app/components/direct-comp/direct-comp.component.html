@@ -1,0 +1,21 @@
+<!-- <p>je fonctionne</p> -->
+<h1 [ngStyle]="{
+    color : myColor,
+    position: 'relative',
+    left : leftOffset+'px'}">
+  Je suis tout coloré!
+</h1>
+<input type="color" [(ngModel)]="myColor">
+<input type="range" min="0" max="100" [(ngModel)]="leftOffset">
+
+<p [ngClass]="{
+  important: leftOffset>50,
+  pasImportant: myColor.toLowerCase() != '#9966ff'.toLowerCase()}">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid rerum in facilis deleniti sapiente ab
+  dolores odit ducimus, similique eligendi iusto tempora cumque placeat itaque? Harum, similique enim. Eligendi,
+  architecto.
+  {{myColor}}
+</p>
+<p [ngStyle]="myStyle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quos minus quia recusandae.
+  Recusandae dolorum aliquid doloremque, aperiam amet magnam voluptatem provident ipsum ab animi corporis? Suscipit
+  quasi architecto consectetur!</p>

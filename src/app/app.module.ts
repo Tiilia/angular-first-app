@@ -12,6 +12,7 @@ import { BindingAttributeComponent } from './components/binding-attribute/bindin
 import { PipesDateComponent } from './components/pipes-date/pipes-date.component';
 import { FrenchMonthPipe } from './pipes/french-month.pipe';
 import { PipesJsonComponent } from './components/pipes-json/pipes-json.component';
+import { DirectCompComponent } from './components/direct-comp/direct-comp.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PipesJsonComponent } from './components/pipes-json/pipes-json.component
     BindingAttributeComponent,
     PipesDateComponent,
     FrenchMonthPipe,
-    PipesJsonComponent
+    PipesJsonComponent,
+    DirectCompComponent
   ],
   imports: [
     BrowserModule,
