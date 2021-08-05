@@ -14,6 +14,10 @@ import { FrenchMonthPipe } from './pipes/french-month.pipe';
 import { PipesJsonComponent } from './components/pipes-json/pipes-json.component';
 import { DirectCompComponent } from './components/direct-comp/direct-comp.component';
 import { DirectStructComponent } from './components/direct-struct/direct-struct.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { EnfantComponent } from './components/enfant/enfant.component';
+import { ShopComponent } from './components/shop/shop.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { DirectStructComponent } from './components/direct-struct/direct-struct.
     FrenchMonthPipe,
     PipesJsonComponent,
     DirectCompComponent,
-    DirectStructComponent
+    DirectStructComponent,
+    ParentComponent,
+    EnfantComponent,
+    ShopComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

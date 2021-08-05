@@ -1,0 +1,4 @@
+TOTAL : {{total|currency:'EUR'}}
+<ng-container *ngFor="let product of products">
+  <app-enfant [monNom]="leNomDeMonEnfant" [product]="product" (onBeBuy)="addToTotal($event)"></app-enfant>
+</ng-container>
