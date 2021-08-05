@@ -1,0 +1,58 @@
+<div *ngIf="true">j'existe</div>
+<div *ngIf="false">je n'existe pas</div>
+
+<div [hidden]="true">j'existe mais je me cache</div>
+
+<label>Afficher</label><input type="checkbox" [(ngModel)]="show">
+<div *ngIf="!show">J'existe</div>
+<div [hidden]="show">Je me cachais</div>
+
+<ng-container *ngIf="show">
+  <dl>
+    <!-- <dl> = definition list :  est une liste de définitions  -->
+    <ng-container *ngFor="let monAddress of addresses">
+      <dt>Adresse :</dt> <!-- <dt> = definition term : le titre de la définition -->
+      <dd>{{monAddress.Rue}} {{monAddress.Numero}}</dd>
+      <!-- <dd> = definition definition : la définition en rapport avec le definition term -->
+      <dt>Localité : </dt>
+      <dd>{{monAddress.CodePostal}} {{monAddress.Localite}}</dd>
+    </ng-container>
+  </dl>
+</ng-container>
+<ng-container *ngIf="!show">
+  <ol>
+    <ng-container *ngFor="let monAddress of addresses">
+      <li>
+        <div>Adresse :</div>
+        <div>{{monAddress.Rue}} {{monAddress.Numero}}</div>
+        <div>Localité : </div>
+        <div>{{monAddress.CodePostal}} {{monAddress.Localite}}</div>
+      </li>
+    </ng-container>
+  </ol>
+</ng-container>
+
+<h2>Laquelle ne devrais pas exister?</h2>
+<div>
+  <label for="4fromages">4 fromages</label>
+  <input id="4fromages" value="4fromages" type="radio" name="pizza" [(ngModel)]="pizza">
+</div>
+<div>
+  <label for="hawaii">Hawaï</label>
+  <input id="hawaii" value="hawaii" type="radio" name="pizza" [(ngModel)]="pizza">
+</div>
+<div>
+  <label for="magarita">Magarita</label>
+  <input id="magarita" value="magarita" type="radio" name="pizza" [(ngModel)]="pizza">
+</div>
+<div>
+  <label for="prosciutto">Prosciutto</label>
+  <input id="prosciutto" value="prosciutto" type="radio" name="pizza" [(ngModel)]="pizza">
+</div>
+
+<ng-container [ngSwitch]="pizza">
+  <div *ngSwitchCase="'hawaii'">Vous avez bon goût!</div>
+  <div *ngSwitchCase="'magarita'">Cela se discute...</div>
+  <div *ngSwitchDefault>Il faudra vraiment tout vous apprendre...</div>
+</ng-container>
+© 2021 GitHub, Inc.

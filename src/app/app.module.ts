@@ -13,6 +13,7 @@ import { PipesDateComponent } from './components/pipes-date/pipes-date.component
 import { FrenchMonthPipe } from './pipes/french-month.pipe';
 import { PipesJsonComponent } from './components/pipes-json/pipes-json.component';
 import { DirectCompComponent } from './components/direct-comp/direct-comp.component';
+import { DirectStructComponent } from './components/direct-struct/direct-struct.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DirectCompComponent } from './components/direct-comp/direct-comp.compon
     PipesDateComponent,
     FrenchMonthPipe,
     PipesJsonComponent,
-    DirectCompComponent
+    DirectCompComponent,
+    DirectStructComponent
   ],
   imports: [
     BrowserModule,
