@@ -1,6 +1,7 @@
 import { ExempleModule } from './exemple/exemple.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { ParentComponent } from './components/parent/parent.component';
 import { EnfantComponent } from './components/enfant/enfant.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CountryComponent } from './components/country/country.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +36,15 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     ParentComponent,
     EnfantComponent,
     ShopComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CountryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ExempleModule
+    ExempleModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

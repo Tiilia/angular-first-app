@@ -1,3 +1,4 @@
+import { CountryComponent } from './components/country/country.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { DirectStructComponent } from './components/direct-struct/direct-struct.component';
@@ -23,10 +24,10 @@ const routes: Routes = [
   { path: "pipe-json", component: PipesJsonComponent },
   { path: "direct-comp", component: DirectCompComponent },
   { path: "direct-struct", component: DirectStructComponent },
-  { path: "input-output", component: ParentComponent },
-  { path: "shop", component: ShopComponent },
+  { path: 'outputinput', component: ParentComponent },
+  { path: 'shop', component: ShopComponent },
+  { path: 'country', component: CountryComponent }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
